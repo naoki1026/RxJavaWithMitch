@@ -1,0 +1,2 @@
+rootProject.name = "RxJava Java"
+include ':app'

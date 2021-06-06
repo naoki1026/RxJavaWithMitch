@@ -10,6 +10,7 @@ import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers;
 import io.reactivex.rxjava3.annotations.NonNull;
 import io.reactivex.rxjava3.core.Observable;
 import io.reactivex.rxjava3.core.Observer;
+import io.reactivex.rxjava3.disposables.CompositeDisposable;
 import io.reactivex.rxjava3.disposables.Disposable;
 import io.reactivex.rxjava3.functions.Predicate;
 import io.reactivex.rxjava3.schedulers.Schedulers;
@@ -22,6 +23,11 @@ public class MainActivity extends AppCompatActivity {
     private TextView text;
 
     // vars
+
+    /**  Disposable
+     *   使用している全てのObserverを追跡して、
+     * 　不要になった場合にそれらをクリアする際に役立つもの
+     * */
 
 
     @Override
